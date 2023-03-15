@@ -1,0 +1,40 @@
+
+:root {
+    --color-background: #ced5dc;
+    --color-black: #111111;
+    --color-main: #4d4b4b;
+    --cursor-active: pointer;
+    --cursor-default: url('./img/edit.png'), pointer;
+}
+body {
+    width: 100vw;
+}
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    cursor: var(--cursor-default);
+}
+.container__title {
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.bayan {
+    color: var(--color-main);
+}
+@media(hover:hover){
+    .bayan:hover {
+        color: var(--color-black)
+    }
+}
+.bayan__title {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr min-content;
+    grid-auto-flow: row ;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    border-top: 0.1rem solid #5d5959;
+}
